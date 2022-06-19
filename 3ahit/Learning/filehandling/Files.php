@@ -17,7 +17,7 @@ if(chdir(directory: "C:/temp")){
 
 
 
-$handle = opendir("C:/xampp/htdocs/3ahit/noah.rametsteiner/filehandling/1.png");
+$handle = opendir("C:/xampp/htdocs/PHP/3ahit/noah.rametsteiner/filehandling/1.jpg");
 while($file = readdir($handle)!==fales){
   echo $file.lf;
   uebung($file);

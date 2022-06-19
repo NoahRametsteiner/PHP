@@ -1,6 +1,5 @@
 <?php
-	require_once("inc/headerinclude.php");
-	require_once("inc/config.inc.php");
+	require_once("headerinclude.php");
 
 	function bmi($height,$weight/*,&$result*/){
 		$result=$weight/($height*$height);
@@ -23,33 +22,33 @@
 	
 	echo bmi($h,$w);
 	
-	echo average(1,2,3,4,90,100,100).lf;
+	echo average(1,2,3,4,90,100,100);
 	
 	$today=new DateTime();
 	$inthefuture=new DateTime('2020-12-24');
 	$daysto=new DateInterval('P1D');
 	$daysto=$inthefuture->diff($today);
-	echo 'Today:  '.$today->format('y-m-d').lf;
-	echo 'until:  '.$inthefuture->format('y-m-d').lf;
-	echo 'will be:  '.$daysto->format('%y year(s) %m month(s) %d day(s)').lf.lf;
+	echo 'Today:  '.$today->format('y-m-d');
+	echo 'until:  '.$inthefuture->format('y-m-d');
+	echo 'will be:  '.$daysto->format('%y year(s) %m month(s) %d day(s)');
 	
 	//my Age
 	$today=new DateTime();
 	$geb=new DateTime('2003-8-29');
 	$age=new DateInterval('P1D');
 	$age=$today->diff($geb);
-	echo 'Today:  '.$today->format('Y-m-d').lf;
-	echo 'Birthday:  '.$geb->format('Y-m-d').lf;
-	echo 'Age:  '.$age->format('%y year(s) %m month(s) %d day(s)').lf.lf;
+	echo 'Today:  '.$today->format('Y-m-d');
+	echo 'Birthday:  '.$geb->format('Y-m-d');
+	echo 'Age:  '.$age->format('%y year(s) %m month(s) %d day(s)');
 	
 	
 	$timestamp=mktime(0,0,0,12,31,2020);
-	echo $timestamp.lf;
+	echo $timestamp;
 	
-	echo date('F D Y W',$timestamp).lf.lf;
+	echo date('F D Y W',$timestamp);
 	
-	echo date('l jS \of F Y h:i:s A').lf.lf;
-	echo date(DATE_RFC822).lf.lf.lf;
+	echo date('l jS \of F Y h:i:s A');
+	echo date(DATE_RFC822);
 	?>
 
 	<form action="<?php echo htmlentities($_SERVER["PHP_SELF"]); ?>" method="POST">
@@ -69,5 +68,5 @@
 		if(!empty($_POST["height"]) && !empty($_POST["weight"]))
 			echo "BMI:    ".bmi($_POST["height"],$_POST["weight"]);
 		}	
-		require_once("inc/footinclude.php");
+		require_once("footinclude.php");
 	?>
