@@ -1,0 +1,30 @@
+html {
+  text-align : left;
+  margin-left: 5px;
+}
+
+h1 {
+  color: #FFA300;
+  font-size: 300%;
+  border: 1px solid gray;
+}
+
+p {
+  color: rgb(255, 255, 255);
+  font-size: 110%;
+}
+
+body {
+  background-color: rgb(33, 33, 33);
+}
+
+label {
+  color: rgb(238, 244, 66);
+  color : white;
+  font-size: 150%;
+}
+
+input {
+  width: 150px;
+  height: 25px;
+}

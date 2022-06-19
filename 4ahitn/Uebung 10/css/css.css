@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+html 			{text-align : left;}
+
+body   
+{  
+font-family: 'Roboto', sans-serif;
+height: 125vh;  
+margin-top: 80px;  
+padding: 30px;  
+background-size: cover;  
+} 
+
+a{text-decoration: none;}
+
+p{
+  font-size: 20px;
+  padding: .3em 1.3em;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+
+}
+p:hover{
+  font-size: 20px;
+  background-color: black;
+  box-shadow: 0px 15px 20px rgba(229, 46, 46, 0.4);
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+table {width: 50%;}
+
+th, td {
+  margin-top: 80px;  
+  text-align: center;
+}
+
+
+label{
+  color: black;
+}
+ 
+header {  
+  text-align: center;
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #c42323;
+  box-shadow: 0px 15px 20px rgba(229, 46, 46, 0.4);
+  border: none;
+  border-radius: 45px;
+}
+
+header * {display: inline;}  
+header li {margin: 20px;} 
+
+button {
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover {
+  background-color: #c42323;
+  box-shadow: 0px 15px 20px rgba(229, 46, 46, 0.4);
+  font-size: 15px;
+  color: black;
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: translateY(-1px);
+}
+
+div{
+  margin-top: 10px;  
+  padding: 1%;
+  border-radius: 50px;
+  background: #ffffff;
+  box-shadow: inset 20px 20px 40px #bfbfbf,
+              inset -20px -20px 40px #ffffff;
+}
+
+
+input[type=text], input {
+  width: 99%;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #ebebeb;
+}
+
+select {
+  width: 99%;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #ebebeb;
+}
